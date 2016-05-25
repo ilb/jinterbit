@@ -1,0 +1,6 @@
+===== NOTES ======
+(2010.12.02)
+Camel components:
+1) Polling(Consumer) - получение журнала регистраций по указанным объектам (+интервал даты)
+2) Query with Ref (Producer) - на вход запрос с одним полем Ref
+3) Bypass (Producer) - xml от 1С, а producer "сохраняет" xml в 1С

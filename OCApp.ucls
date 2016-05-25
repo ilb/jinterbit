@@ -1,0 +1,102 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.OCApp" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/OCApp.java" binary="false">    
+    <position x="197" y="116" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.InstancePool" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/InstancePool.java" binary="false">    
+    <position x="421" y="115" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.SimpleInstancePool" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/SimpleInstancePool.java" binary="false">    
+    <position x="422" y="243" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.ApplicationDriver" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/ApplicationDriver.java" binary="false">    
+    <position x="79" y="210" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.TypeSynonymParser" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/TypeSynonymParser.java" binary="false">    
+    <position x="212" y="332" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.VariantFactory" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/VariantFactory.java" binary="false">    
+    <position x="-13" y="331" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <association>    
+    <source project="OCExport" name="com.ipc.oce.ApplicationDriver" 
+      file="/OCExport/src/com/ipc/oce/ApplicationDriver.java" binary="false" navigable="false">      
+      <attribute name="typeSynonymParser"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="OCExport" name="com.ipc.oce.TypeSynonymParser" 
+      file="/OCExport/src/com/ipc/oce/TypeSynonymParser.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="OCExport" name="com.ipc.oce.OCApp" file="/OCExport/src/com/ipc/oce/OCApp.java" binary="false" 
+      navigable="false">      
+      <attribute name="instancesStorage"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="OCExport" name="com.ipc.oce.InstancePool" file="/OCExport/src/com/ipc/oce/InstancePool.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="OCExport" name="com.ipc.oce.ApplicationDriver" 
+      file="/OCExport/src/com/ipc/oce/ApplicationDriver.java" binary="false" navigable="false">      
+      <attribute name="variantGUIDTable"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="OCExport" name="com.ipc.oce.VariantFactory" file="/OCExport/src/com/ipc/oce/VariantFactory.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization>    
+    <source project="OCExport" name="com.ipc.oce.SimpleInstancePool" 
+      file="/OCExport/src/com/ipc/oce/SimpleInstancePool.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.InstancePool" file="/OCExport/src/com/ipc/oce/InstancePool.java" 
+      binary="false"/>  
+  </realization>  
+  <association>    
+    <source project="OCExport" name="com.ipc.oce.OCApp" file="/OCExport/src/com/ipc/oce/OCApp.java" binary="false" 
+      navigable="false">      
+      <attribute name="driver"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="OCExport" name="com.ipc.oce.ApplicationDriver" 
+      file="/OCExport/src/com/ipc/oce/ApplicationDriver.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="false" package="false" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

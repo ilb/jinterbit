@@ -1,0 +1,116 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.OCObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/OCObject.java" binary="false">    
+    <position x="344" y="-155" width="229" height="403"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.query.OCQuery" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/query/OCQuery.java" binary="false">    
+    <position x="16" y="167" width="239" height="163"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.query.OCQueryResult" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false">    
+    <position x="257" y="470" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.query.OCQueryResultColumn" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumn.java" binary="false">    
+    <position x="731" y="698" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.query.OCQueryResultColumnsCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumnsCollection.java" binary="false">    
+    <position x="425" y="697" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.query.OCQueryResultSelection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/query/OCQueryResultSelection.java" binary="false">    
+    <position x="1001" y="469" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResultColumnsCollection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumnsCollection.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.query.OCQueryResultColumn" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumn.java" binary="false"/>  
+  </dependency>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResultColumnsCollection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumnsCollection.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.OCObject" file="/OCExport/src/com/ipc/oce/OCObject.java" 
+      binary="false"/>  
+  </generalization>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResultSelection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultSelection.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.query.OCQueryResult" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResult" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.query.OCQueryResultSelection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultSelection.java" binary="false"/>  
+  </dependency>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQuery" file="/OCExport/src/com/ipc/oce/query/OCQuery.java" 
+      binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.OCObject" file="/OCExport/src/com/ipc/oce/OCObject.java" 
+      binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResultColumn" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumn.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.OCObject" file="/OCExport/src/com/ipc/oce/OCObject.java" 
+      binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResultSelection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultSelection.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.OCObject" file="/OCExport/src/com/ipc/oce/OCObject.java" 
+      binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResult" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.OCObject" file="/OCExport/src/com/ipc/oce/OCObject.java" 
+      binary="false"/>  
+  </generalization>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQuery" file="/OCExport/src/com/ipc/oce/query/OCQuery.java" 
+      binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.query.OCQueryResult" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.query.OCQueryResult" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResult.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.query.OCQueryResultColumnsCollection" 
+      file="/OCExport/src/com/ipc/oce/query/OCQueryResultColumnsCollection.java" binary="false"/>  
+  </dependency>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="false" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,370 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="false" generalizations="false" 
+  realizations="false" associations="false" dependencies="false" nesting-relationships="false">  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false">    
+    <position x="20" y="60" width="206" height="45"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataAccountingFlagCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAccountingFlagCollection.java" 
+    binary="false">    
+    <position x="125" y="583" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataChartsOfCalculationTypeCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartsOfCalculationTypeCollection.java" binary="false">    
+    <position x="462" y="30" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataGraphCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataGraphCollection.java" 
+    binary="false">    
+    <position x="90" y="488" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataInformationRegistersCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataInformationRegistersCollection.java" binary="false">    
+    <position x="464" y="221" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataSubsystemCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataSubsystemCollection.java" 
+    binary="false">    
+    <position x="434" y="159" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataDocumentNumeratorCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentNumeratorCollection.java" binary="false">    
+    <position x="456" y="95" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataConstantCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataConstantCollection.java" 
+    binary="false">    
+    <position x="432" y="961" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataCalculationRegisterCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataCalculationRegisterCollection.java" binary="false">    
+    <position x="461" y="838" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataExchangePlanCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataExchangePlanCollection.java" 
+    binary="false">    
+    <position x="448" y="1023" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataChartOfCharacteristicTypeCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartOfCharacteristicTypeCollection.java" 
+    binary="false">    
+    <position x="484" y="898" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataAccumulationRegisterCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAccumulationRegisterCollection.java" binary="false">    
+    <position x="464" y="712" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataResourceCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataResourceCollection.java" 
+    binary="false">    
+    <position x="542" y="1285" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataSequenceCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataSequenceCollection.java" 
+    binary="false">    
+    <position x="428" y="534" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataXDTOPackagesCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataXDTOPackagesCollection.java" 
+    binary="false">    
+    <position x="442" y="595" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataEnumCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataEnumCollection.java" binary="false">    
+    <position x="417" y="655" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataRecalculationCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataRecalculationCollection.java" 
+    binary="false">    
+    <position x="597" y="1170" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataEnumValueCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataEnumValueCollection.java" 
+    binary="false">    
+    <position x="143" y="1128" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataReportCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataReportCollection.java" 
+    binary="false">    
+    <position x="424" y="772" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataDimensionCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDimensionCollection.java" 
+    binary="false">    
+    <position x="162" y="1196" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataCatalogCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataCatalogCollection.java" 
+    binary="false">    
+    <position x="425" y="289" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataExtDimensionAccountingFlagCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataExtDimensionAccountingFlagCollection.java" 
+    binary="false">    
+    <position x="213" y="1272" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataDocumentJournalCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentJournalCollection.java" binary="false">    
+    <position x="452" y="352" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataDocumentCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentCollection.java" 
+    binary="false">    
+    <position x="424" y="-26" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataAttributeCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAttributeCollection.java" 
+    binary="false">    
+    <position x="187" y="1427" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.metadata.collection.OCMetadataTabularSectionCollection" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataTabularSectionCollection.java" 
+    binary="false">    
+    <position x="218" y="1347" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataChartsOfAccountCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartsOfAccountCollection.java" binary="false">    
+    <position x="452" y="472" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="com.ipc.oce.metadata.collection.OCMetadataAccountingRegisterCollection" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAccountingRegisterCollection.java" binary="false">    
+    <position x="457" y="418" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataSequenceCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataSequenceCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataDocumentNumeratorCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentNumeratorCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataCalculationRegisterCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataCalculationRegisterCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataInformationRegistersCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataInformationRegistersCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataCatalogCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataCatalogCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataDocumentJournalCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentJournalCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataAccumulationRegisterCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAccumulationRegisterCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataAccountingRegisterCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataAccountingRegisterCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataEnumCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataEnumCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataConstantCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataConstantCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataChartsOfCalculationTypeCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartsOfCalculationTypeCollection.java" 
+      binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataXDTOPackagesCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataXDTOPackagesCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataChartOfCharacteristicTypeCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartOfCharacteristicTypeCollection.java" 
+      binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataChartsOfAccountCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataChartsOfAccountCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataReportCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataReportCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataExchangePlanCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataExchangePlanCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataSubsystemCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataSubsystemCollection.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="OCExport" name="com.ipc.oce.metadata.collection.OCMetadataDocumentCollection" 
+      file="/OCExport/src/com/ipc/oce/metadata/collection/OCMetadataDocumentCollection.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.metadata.OCConfigurationMetadataObject" 
+      file="/OCExport/src/com/ipc/oce/metadata/OCConfigurationMetadataObject.java" binary="false"/>  
+  </dependency>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="false" visibility="false">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="false" package="false" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

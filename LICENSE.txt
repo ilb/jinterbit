@@ -1,0 +1,55 @@
+Copyright (C) 2010-2011 OCTitbit 
+
+IMPORTANT: YOU SHOULD CAREFULLY READ THIS LEGAL AGREEMENT BEFORE INSTALLING 
+THIS PACKAGE.
+BY INSTALLING YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT AND 
+AGREE THAT YOU WILL BE LEGALLY BOUND BY THEM. 
+IF THESE TERMS AND CONDITIONS ARE NOT ACCEPTABLE TO YOU, DO NOT CONTINUE TO 
+INSTALL THIS SOFTWARE.
+
+
+OCTitbit LICENSE AGREEMENT
+
+LICENSE FOR FREE AND TRIAL VERSIONS
+
+All free and trial versions are supplied "as is" without warranty of any kind.
+Installation and use at your own risk only.
+
+ADDITIONAL LICENSE AGREEMENT FOR COMMERCIAL VERSIONS
+
+In addition to this license the OCTitbit GmbH license conditions apply. 
+
+GENERAL PROVISIONS
+
+Customer shall not remove any product identification, copyright notices, 
+or other notices or proprietary restrictions from OCTitbit.
+
+Customer shall not cause or permit reverse engineering, disassembly, 
+or decompilation of OCTitbit.
+
+COPYRIGHT/OWNERSHIP OF PROGRAM 
+
+OCTitbit is the proprietary product of Developer and its 
+licensors and it is protected by copyright, trade secret and other intellectual 
+property laws.
+
+Customer acquires only the right to use the software and does not acquire any 
+rights, express or implied, in OCTitbit other than those specified in 
+this License.
+
+Developer, or its licensor, shall at all times retain all rights, title, interest, 
+including intellectual property rights, in OCTitbit.
+
+LIMITATION OF LIABILITY
+
+NEITHER OCTitbit GMBH NOR ANY OF ITS EMPLOYEES AND LICENSORS SHALL BE LIABLE
+FOR ANY DAMAGES CAUSED BY THE SOFTWARE, INCLUDING BUT NOT LIMITED TO INDIRECT, 
+INCIDENTAL, SPECIAL OR CONSEQUENTIAL  DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, 
+LOSS OF SAVINGS, REVENUE, DATA, INCURRED BY CUSTOMERS OR ANY THIRD PARTY, EVEN 
+IF DEVELOPER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+IN CASES WHERE STATE OR COUNTRY LAW DOES NOT ALLOW SUCH LIMITATION THE LIABILITY 
+SHALL IN ANY CASE BE LIMITED TO THE PRICE PAID FOR THE LICENSE.
+
+CUSTOMER HEREBY ACKNOWLEDGES THAT CUSTOMER HAS READ THIS AGREEMENT, UNDERSTANDS 
+IT AND AGREES TO BE BOUND BY ITS TERMS AND CONDITIONS.
+------------------------------------------

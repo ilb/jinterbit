@@ -1,0 +1,337 @@
+=== **версия 0.4.0 (Tellurium)** ===
+(2011.01.31)
+* Добавлен конструктор PropertiesReader(Reader reader)
+* Уточнил логику загрузки default-драйвера. Null в имени или инстансе ApplicationDriver-а это DefaultApplicationDriver
+* Исправлен потенциальный bug в OCApp и OCVariant с toString = null
+* valueOf модификации в JDBC компоненте
+* Добавлен новый varset класс EEventLogLevel для фильтрации уровней сообщений
+* Исправлена ошибка с перепутанными местами параметрами в методе insert у OCArray
+
+(2011.01.28)
+* В OCObject введено кэширование sessionID <<changeset 3916cee76cb1>>
+* Добавлены первые ресурсные классы JAX-RS <<issue 1>>: получение EventLog (дата начала\конца + тип события), выборка сериализованых через XDTO объектов (мета-тип объекта и его UUID) <<changeset dc5ed305e877>>
+
+(2011.01.27)
+* Изыскания на тему JAX-WS(RESTful) и JAX-RS
+* Переопределен метод toString у OCApp
+
+(2011.01.26)
+* Исправлен недочет при определении TypeDescription в OCQueryResultSelection при getValue(String)
+* Переопределены методы toString у OCQueryResult и OCQueryResultColumnsCollection
+* В OCEResultSet методы getObject могут возвращать вложеный resultset как OCEResultSet
+
+(2011.01.25)
+* В OCType изменение маппинга BOOLEAN -> SMALLINT
+* В OCEResultSet методы getShort обрабатывают значения boolean, метод getObject на boolean тип 1C возвращает инстанс Short (т.е. SQL BOOLEAN -> Java Short)
+* Добавлена поддержка BigDecimal из Long, Double, String
+* Метод getColumnTypeName в RSMD подключен к OCType
+* В OCEResultSet реализованы getBinaryStream (обращение к полю ссылки(Ref), получение объекта и сериализация через XDTO-сериализатор). Выход InputStream c XML (XDTO)
+* Реализован интерфейс java.sql.Ref для динамических типов 1С
+* Переопределение метода toString у Ref * получение строкового представления UUID
+* В OCEResultSet реализованы getRef + модернизация getBinaryStream
+* В OCEResultSet при получении ссылки через getString возвращается UUID (получение объекта ссылки только через getObject)
+* В OCType и OCVariant добавлена обработка типа "Результат запроса" (OCT_QUERY_RESULT=600). *для обработки запросов к табличной части и т.д.
+* В OCTabularSectionManager добавлены методы upload, load, total(int), groupBy
+* Из OCTabularSectionManager удален метод controlWriteAccessMode в соотв с @depricated
+
+(2011.01.24)
+* [bug-fix] OCEDriver делает повторную проверку на acceptURL и возвращает null (из-за автозагрузки драйверов в jre6 и jdbc4)
+* В DBMD метод getCatalogTerm возвращает null
+* [bug-fix] Обработка null в OCMetadataDocumentCollection и OCMetadataCatalogCollection в методе find
+* [bug-fix] исправлена ошибка получение primaryKeys из DBDM
+
+(2011.01.22)
+* Изменение пакетирования: jdbc вынесены отдельно + наименование пакетов
+* В optional добавлен common-logging
+* Добавлен Timer + Ping в OCEConnection
+* [bug-fix] В OCEDatabaseMetadata при запросе getTables с catalogPattern==null
+* Добавлен пототип executeUpdate в OCEStatement
+* В OCEDatabaseMetaData реализован пустой resultset для getProcedures\Columns, getPrimaryKeys, getIndexInfo
+
+
+=== **версия 0.3.0 (Yttrium)** ===
+
+(2011.01.21)
+* В OCEConnection доработаны isClose (основан на ping) и close
+
+(2011.01.19)
+* В DBMS реализован метод getTypeInfo (пока возвращает только Ref типы конфигурации)
+* В DBMD в getColumns по Document добавлены поля Number, Date, Posted, DeletionMark
+
+(2011.01.18)
+* Дописан parser url в OCEDriver. Теперь все три метода DriverManager.getConnection работают
+* [bug-fix] В LocalResultSet getter-ы по string ошибка сдвига
+* Добавлены методы в DBMD getSchemas, getTables, getColumns
+* [bug-fix] Исправлен метод в DBMD getIdentifierQuoteString: возврат space
+
+(2011.01.17)
+* Реализация методов jdbc
+* В OCEDriver в метод connect в SQLException добавлен вывод параметров подключения
+* [bug] Исправление постинкремента OCEResultSetMetaData в getColumnDisplaySize(int)
+
+(2011.01.14)
+* В OCEConnection добавлена проверка на повторное закрытие + детали
+
+(2011.01.13)
+* В ComApp и OCApp добавлена установка globalSocetTimeout
+* Изменение конструктора OCEConnection + добавлен setter для driver
+* [bug] Добавлен ключ final в поля EventManager
+* Добавлен автомалический rollback в метод exit OCApp
+* Приведено в соотв с JRE 1.5: SQLFeatureNotSupportedException заменен на SQLException, удалена аннотация @Override
+
+(2011.01.12)
+* В OCXDTOFactory добавлены методы exportXDTOModel
+* В OCXMLWriter добавлен openFile
+* Добавлен OCDOMDocument, OCDOMBuilder, OCXMLSchemaBuilder + соотв new-методы в OCApp
+* Добавлен OCDOMWriter
+* В OCXMLSchema добавлен метод getSchemaAsString
+* Добавлен OCXDTODataValueCollection + методы
+* Полностью реализован OCXDTODataValue
+* В XDTODataObject добавлены методы set*, get*, add* 
+
+(2011.01.11)
+* Добавлены варсеты EXMLForm, EXMLTypeAssignment
+* В OCXDTOSerializer добавлены расширенные методы writeXML + canRead и xmlString
+* В OCXDTOSerializer добавлены методы readXML
+* В OCVariant.value добавлен try для приема не ref-объектов
+* В OCXDTOFactory обавлены методы writeXML с OCXDTODataObject\value (правда пока неясно с их применимостью)
+* В OCXDTOObjectType добавлены все методы
+
+(2010.12.30)
+* Добавлены классы OCXDTOFactory, OCXDTOPackage, OCXDTOPackageCollection + метода в OCApp getXDTOPackages
+* Добавлены OCXDTOProperty(TODO методы), OCXDTOPropertyCollection
+
+(2010.12.29)
+* В библиотеку oce.web добавлена настройка из PropertiesReader и два параметра в контест web-контейнера (OCE_CONFIG, OCE_INSTANCE_NAME)
+* [bug] Исправлена ошибка в VariantFactoryV81 c загрузкой LogFactory
+* Создан класс XPathDataMapper для xpath маппинга на Map и bean
+
+(2010.12.28)
+* [bug] В UnmarshalHelper постоянное присвоение нового UUID в режиме preventEmptyRef
+* [bug] Удалено кэширование в getAssociatedSessionID приводившее к невозможности повторного опознания объекта после reconnect
+* В OCApp reconnect добавлен exit в пустым catch
+* Добавлен ReconnectConsumerPollStrategy с reconnect к по endpoint (соответственно)
+* В EventManger-е добавлено удаление только последненго log-файла, а не всех
+
+(2010.12.27)
+* [bug] Исправлена ошибка OCApp.string при получении EMPTY объекта
+* Введена новая модель получения (активации) varsets. Основана на "ранней активации"
+* В OCDocumentObject добавлен метод write с параметрами проведения и записи через varsets
+* В OCQuery добавлен метод executeBatch, findParameters + классы и методы OCQueryParameterDescription, OCQueryParametersDescription
+* В OCApp добавлен метод findVarset для поиска по статическим именам varset-ов
+* В OCObject переопределен метод equals, hashCode * сравнение строк inner-representation
+* Первый рабочий прототип OCEPreparedStatement
+* Доработана часть методов OCEDatabaseMetadata
+
+(2010.12.24)
+* В Transaction добавлен метод inTransaction + в OCApp добавлено ограничение на одну транзакцию
+* В OCType добавлено определение типа NULL
+* [bug] в OCDocumentManger в методе findByNumber2 в случае если ResultSet пустой
+* Доработан OCEResultSetMetadata и OCEStatement, начат OCEPreparedStatement
+* В Transaction метод inTransaction заменен с блокировочной переменной на вызов 1С
+
+(2010.12.23)
+* Методы get<Type>Value в OCQueryResultSelection переименованы в get<Type>
+* В OCQueryResultColumnsCollection добавлено кэширования обращений к колонкам метаданных курсора + кэш коллекции колонок в OCQueryResult
+* Полностью реализован OCEResultSet и часть OCEResultSetMetadata
+
+(2010.12.22)
+* Начата разработка JDBC драйвера. Реализован OCEDriver + часть OCEConnection и созданы основные интерфейса JDBCspec
+* Добавлен OCInfoBaseUsersManager (+все методы) и OCInfoBaseUser(+основные методы)
+* В OCApp добавлен метод для получения OCInfoBaseUsersManager
+* В класс Transaction добавлен маркер открытой транзакции для предотвращения ошибок при повторных вызовах (например commit-commit)
+
+(2010.12.21)
+* В OCVariant в методе value введены generics (замечательно)
+* В OCQueryResultColumnsCollection метод count объявлен @depricated и заменен на size
+* Доработаны классы OCQueryResultColumn, OCQueryResultColumnsCollection в соотв с java-beans + возвращаемые типы приведены к внутренней модели вместо JI + javadoc
+* В OCQueryResultColumnsCollection в метод size добавлено кэширование результата
+* Добавлен метод selection2xml для xml сериализации OCQueryResultSelection
+* selection2xml опимизирован на хранении имен метаданных объектов по курсору
+
+
+=== **версия 0.2.5 (Scandium)** ===
+(2010.12.21)
+* Доработаны методы класса OCExchangePlanObject и OCExchangePlanRef
+* В OCExchangePlanManager добавлены дополнительные методы по поиску и созданию объектов
+* В OCDocumentManager метод create переименован в createDocument (по названию метода 1С) + добавлен метод emptyRef + findByAttribute
+* В OCDataExchangeParameters добавлены setSender\getSender (объект закончен)
+* Добавлены все методы в OCCollectionIndexes + класс OCCollectionIndexe (ИМХО бесполезный)
+
+(2010.12.20)
+* [bug] Исправлена ошибка получения DataExchange в OCDocumentObject
+* Добавлен объект OCNodeSet + метод getRecipients в OCDataExchangeParameters
+* В OCApp добавлен метод getExchangePlansCollection + OCExchangePlansCollection, OCExchangePlanManager, OCExchangePlanRef
+* В OCExchangePlansCollection добавлен метод selectChanges + OCDataSelection
+* Добавлены классы OCExchangePlanSelection, OCExchangePlanObject
+
+(2010.12.15)
+* Метод write, read вынесен в _OCCOmmonObject (имплементаии в унаследованных классах сохранены: super.*())
+* В OCApp добавлен метод поиска дата-объектов findDataObject(String, String) * полное имя типа объекта и uuid
+
+(2010.12.14)
+* Сиздан прототип camel-компонента (Component, ScheduledPollEndpoint, ScheduledPollConsumer)
+* Добавлены методы в OCArray (insert, add, clear, delete, uBound) + в OCApp метод по сзоданию OCArray + javadoc
+* Метод getEventLog в EventManager допускает задание массива типов событий (thanks 2 OCArray) + отбор по массиву метаданных (!!!)
+* (!) В ОCApp добавлен generic метод getManager для получения любого заданного менеджера используя рефлексию по имени объекта
+* Добавлен ObjectLookupProcessor для поиска объектов по UUID и типу (Пока производится поиск только для OCDocumentManager)
+
+(2010.12.06)
+* В OCQuerySelection добавлена ссылка на его "result" + метод getColumns()
+
+(2010.12.03)
+* Добавлен механизм работы с транзакциями 1С (begin, commit, rollback) + в OCApp метод createTransaction
+* Добавлен getTempFilesDir в OCApp (правда хотелось не системный tmp)
+
+(2010.12.02)
+* Добавлена схема xsd для eventLog + пакет JAXB для преобразования EventLog (com.ipc.oce.events.v81)
+* Добавлена реализация OCEventNamespaceContext для EventLog + добавлен в драйвер
+* В EventManager добавлены методы getEventLog с фильтрацией + объявлены статические поля структуры фильтра FLD_* + EVENT_*
+* В OCStruct добавлен метод insert с сигнатурой Map + insert c OCObject (дополнительно к OCVariant)
+* В OCApp добавлен метод ping
+* В OCApp добавлено сохранение параметров подключения в методе connect + добавлен метод reconnect по сохраненным параметрам
+* Добавлены реализации camel component, endpoint, producer (наброски) (--alpha)
+* Доработка + bug-fix в build.xml
+
+(2010.12.01)
+* ВАЖНО! В OCVaraint конструктор с сигнатурой java.lang.Object теперь автоматически распознает OCObject
+* Добавлен класс QueryTemplate (по мотивам spring-jdbc) с методами query/ForObject/ForSelection + RowMapper
+* Добавлен класс OCTextReader + методы
+* В OCApp добавлен метод deleteFiles, moveFile (TODO нужно его испытать, похоже мощьная вещь!)
+* Начато создание EventManager-а
+
+(2010.11.30)
+* Добавлен класс OCXMLReader и метод readXML для чтения xml из строки и из файла на сервере 1С
+* В OCXMLReader добавлен метод чтения данных из локального потока
+* В OCApp добавлены методы createUUID (новый UUID из 1С) и craeteUUID2 (новый UUID из Java)
+* В OCDocumentObject добавлен метод setNewObjectRef
+* В OCDocumentManager метод getRefFromUUID переименован в getRef + добавлен метод newRef
+* В OCCatalogManager добавлен метод getPredefinedItem
+* В OCCatalogManager метод getRefFromUUID переименован в getRef + добавлен метод newRef
+* В OCChartsOfAccountManager метод getRefFromUUID переименован в getRef + добавлен метод newRef
+* Добавлен класс UnmarshalHelper для упрощения работы с преобразованием XML в объекты 1С
+
+(2010.11.24)
+* В com/ipc/oce/xml/xerces/Utils добавлен метод вычисления CRC32 от массива байт
+
+(2010.11.23)
+* Добавлены в OCApp еще два метода writeXML с сигнатурами (полное имя и локальное имя+namespace)
+* В OCXMLWriter добавлен метод добавления xml декларации + установка indend
+* Добавлен helper-класс для упрощения сериализации объектов с испорльзованием OCXMLWriter и методов writeXML
+* Рефакторинг: название пакета с сериализаторами 1с перенесены из  com.ipc.oce.xml в com.ipc.oce.xml.oc
+* В OCDocumentManger добавлены методы finaByNumber2 (number и number+date) для поиска докуметнов и использованием механизма запросов
+* [Bug-fix] в OCCatalogManager в методе findByCode(String): null -> false
+* Добавлен класс OCXMLNamespaceContext с частью методов (исключая поисковые)
+* Добавлен класс com.ipc.oce.xml.xerces.Utils со статическими методами преобразования W3C Document (xerces) <-> String(XML)
+
+(2010.11.22)
+* Классы xml сервиализации через xerces перенесены в com.ipc.oce.xml.xerces
+* Добавлен класс штатный класс XML-сериализации 1c * OCXMLWriter + методы в OCApp writeXML и newXMLWriter (собственно для создания XMLWriter-а как объекта)
+* Класс OCXMLWriter снабжен начальным набором методов для сериатизации объектов в строку
+
+=== **версия 0.2.0 (Magnesium)** ===
+(2010.10.27)
+* В OCCatalogObject добавлены методы set для Code, Description, Parent
+* В OCDocumentObject добавлены методы set для Date, Number, Posted
+* В OCChartOfAccountsObject добавлены методы set для OffBalance, Code, Description, Order
+
+(2010.10.26)
+* В OCQuery добавлены методы по получению параметров запроса и установки параметров
+* В OCApp добавлен метод (shor-path) newQuery из строки
+* Добавлены javadoc к классам пакета query
+* Изменен метод в OCQueryResultSelection recordType на возврат класса OCQueryRecordType
+* Произведен рефакторинг: переименование методов в OCQueryResultSelection в соотв. с нотацией java
+* Изменен return методов getValue на тип OCVariant + добавлены методы getObject для объектов типа Ref
+
+(2010.10.25)
+* OCAccumulationRegisterCollection реализованы методы select() и select co со всеми параметрами
+* Добавлен OCAccumulationRegisterSelection + методы + добавлен класс-набор OCAccumulationRecordType
+* Добавлено кэширование результата метода value в OCVariant
+* В OCAccumulationRegisterManager добавлен метод getTurnovers() и getTurnovers по всем параметрам 
+* Добавлен класс возврата для OCAccumulationRegisterManager.turnovers * OCValueTable(добавлены основные методы ~70% ост. малоинтересны) -> +OCValueTableColumnCollection(+мин. необх набор методов) +OCCollectionIndexes(ненужный класс. работы остановлены) +OCValueTableRow(+методы) +OCValueTableColumn(+методы)
+* В OCAccumulationRegisterManager дбавлен getBalance
+* TODO: доделать OCAccumulationRegisterManager
+
+(2010.10.22)
+* Добавлена реализация OCConstantManager + создан OCConstantValueManager+его методы
+* Добавлен OCAccumulationRegisterCollection + manager с базовыми методами (загрузка метаданных)
+
+(2010.10.21)
+* Добавлен метод по получению строкового значения OCEnumRef
+* Созданы OCConstantCollection + manager
+
+(2010.10.19)
+* Добавлен класс OCStructure (Ура, товарищи!!!)
+* В OCApp добавлен метод createStructure
+* Добавлены в OCCatalogManager методы select по parent, owner и structure
+* Добавлен в OCDocumentManager метод select по датам, структуре и оредеру 
+
+(2010.10.18)
+* В OCCatalogManager добавлен метод selectHierarchically
+* Успешно, товарищи, проведен эксперимент с getRef и UUID (В класс OCApp добавлен метод createUUID из строки)
+* Изменена сигнатура valueToStringInternal(OCObject) + valueToStringInternal(IJIDispatch) переведен в protected
+
+(2010.10.15)
+* В OCVariant.value изменено: удалено приведение рефа к _OCCommonRef (тк не все рефы наследуют его методы), вместо этого напрямую вызывается callMethodA(Metadata)
+* OCCatalogManager унаследован от OCAbstractManager (+измененя с collection)
+* OCChartsOfAccountManager унаследован от OCAbstractManager (+измененя с collection)
+* OCEnumManager унаследован от OCAbstractManager (+измененя с collection)
+* Добавлена обработка типов в value OCChartOfAccountRef и OCEnumRef
+* Добавлен интерфейс NamedRef и реализация методов в классах Ref для определения полного имени ссылки
+
+(2010.10.14)
+* Добавлен класс-набор OCPosting, OCRealTimePosting + методы в OCDocumentMetadataObject getRealTimePosting, getNumberPeriodicity, getPosting, getDataLockControlMode
+* Рефакторинг создан OCAbstractManager: пока для подгрузки метаданных к менеджеру (Пока подключен OCDocumentManager + изменение в Collection)
+* Исправлена ошибка получения метаданных в _OCCommonRef
+* Добавлен метод static nameToCode в OCType + изменен метод getTypeCode
+* !!! Изменен метод value у OCVariant: Если тип простой, то приводится к простому java-типу. Если VT_UNKNOWN, то приводим к Ref и через метаданные рефа определяем тип "общего" рефа и приводим к конкретному. Это позволяет получать значение в любом режиме, в т.ч. когда OCTypeDescription незадан и даже при multiType-е
+* Изменент toString у OCVariant: вместо явного приведения к String использует toString
+* Добавлен метод getTypeCode в OCVariant для определения внутреннего типа (используется только после вызова value() )
+* Введен _OCCommonObject и соответственно изменить метод в _OCCommonRef
+* Расширен casting типов в OCVariant.value (I2, I4, I8, NULL, R4, R8)
+* Исправлен (доработан) метод getUse класса OCTabularSectionMetadataObject (снят флаг @depricated + реализация)
+* Из OCVariant удален default-конструктор и все setter-ы
+
+(2010.10.13)
+* Рефакторинг: произведено переименование пакетов. корневой com.ipc.oce
+* Добавлен OCMetadataCalculationRegisterCollection
+* Добавлен OCMetadataInformationRegistersCollection
+* Добавлены методы по получению классов-наборов из глобальных метаданных
+
+(2010.10.12)
+* В класс OCAttributeMetadataObject добавлен метод getIndexing (+ класс-константа OCIndexing), getUse и класс OCAttributeUse, getScheduleLink
+* В класс OCDimensionMetadataObject добавлены методы: isDenyIncompleteValues
+* Добавлен класс OCCalculationRegisterMetadataObject + методы
+* Добавлен класс OCInformationRegisterMetadataObject + методы
+* Добавлен OCMetadataRecalculationCollection и OCRecalculationMetadataObject + методы
+* Рефакторинг: переименование коллекций метаданных (у кого были удалил суффиксы Object)
+* Добавлен интерфейс IOCVariantSet для классов реализующих наборы вариантов
+* Добавлен класс-набор OCInformationRegisterPeriodicity
+* Рефакторинг: перенос всех классов "наборов вариантов" в отдельный пакет
+* Добавлен OCMetadataDocumentNumeratorCollection + расширен OCDocumentNumeratorMetadataObject + 100% методов + добавлен класс-набор OCBusinessProcessNumberPeriodicity, OCBusinessProcessNumberType
+* Добавлен OCMetadataReportCollection + OCReportMetadataObject + методы
+* Добавлен OCMetadataExchangePlanCollection + OCExchangePlanMetadataObject + методы
+* Добавлен OCMetadataSequenceCollection + OCSequenceMetadataObject + методы + OCMoveBoundaryOnPosting
+* В класс OCAccountingRegisterMetadataObject добавлены методы getSubsystems, getDataLockControlMode
+* Добавлен OCMetadataAccumulationRegisterCollection + OCAccumulationRegisterMetadataObject + методы + OCAccumulationRegisterType
+* Рефакторинг: 24 (+2 Common) мета-коллекции вынесены в отдельный пакет ru.nkv.oce.metadata.collection
+* Рефакторинг: 27 мета-объектов вынесены в отдельный пакет ru.nkv.oce.metadata.objects
+* TODO (готово) переименовать пакеты в соотв с соглашениями "javaWorld"
+
+(2010.10.11)
+* Добавлены работы с табличными частями
+* Добавлен в *.object DocumentJournal
+* В OCCatalogManager добавлены методы findByCode, createItem
+* Добавлены методы в OCCatalogObject (были только конструкторы) * можно модифицировать справочники
+* Добавлены в *.object Enum (имеет только ref, имена беруться из метаданных)
+* (ВАЖНО!)Переопределен toString у OCObject на представление 1С (String)
+* OCDocumentObject добавлен метот (и классы) для RegisterRecordsCollection (пока в TODO)
+* Добавлены в *.object ChartOfAccounts (collection, manager, ref, object, selection)
+* Получен метод работы с константами платформы (см. класс OCAccountType) * возможно нужно заменить на enum
+* Реализован getAllowedLength в OCStringQualifier
+* Добавлены константы в OCAllowedLength (см. OCStringQualifier)
+* Доработан OCNumberQualifiers: метод определения знака OCAllowedSign
+* Доработан OCDateQualifiers: реализован метод getDateFractions + реализация констант OCDateFractions
+* Добавлен объект метаданных OCChartsOfCalculationTypeMetadataObject
+* Добавлен класс-константа OCDefaultDataLockControlMode для OCChartsOfCalculationTypeMetadataObject
+

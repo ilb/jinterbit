@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Document guid="d74f9d12-2219-11df-962b-001e37261b0f" name="ПриемНаРаботуВОрганизацию"
+	xmlns="http://www.interprocom.ru/ocexport">
+	<Number>ИНТ00000001</Number>
+	<Date>2009-06-24 12:00:00</Date>
+	<Posted>true</Posted>
+	<DeletionMark>false</DeletionMark>
+	<Attributes>
+		<Attribute guid="954dcbc2-67c7-11de-9f2f-0015e93cf15c"
+			isRef="true" name="Организация" refType="Справочник.Организации">ООО "Интерпроком"</Attribute>
+		<Attribute isRef="false" name="Комментарий" />
+		<Attribute isRef="true" name="УдалитьВидЗанятости"
+			refType="Перечисление.ВидыЗанятостиВОрганизации" />
+		<Attribute guid="20a66e88-109c-11df-9611-001e37261b0f"
+			isRef="true" name="Ответственный" refType="Справочник.Пользователи">Кузьмина А.</Attribute>
+		<Attribute isRef="false" name="КраткийСоставДокумента">Городецкий В.А.</Attribute>
+	</Attributes>
+</Document>
