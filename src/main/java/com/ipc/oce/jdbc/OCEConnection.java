@@ -30,6 +30,7 @@ import org.jinterop.dcom.common.JIException;
 
 import com.ipc.oce.OCApp;
 import com.ipc.oce.Transaction;
+import java.util.concurrent.Executor;
 
 /**
  * @author Konovalov
@@ -420,5 +421,25 @@ public class OCEConnection implements Connection {
 	public Struct createStruct(String paramString, Object[] paramArrayOfObject) throws SQLException {
 		throw new SQLException(METHOD_NOT_APPLICABLE);
 	}
+
+    public void setSchema(String schema) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getSchema() throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void abort(Executor executor) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setNetworkTimeout(Executor executor, int milliseconds) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int getNetworkTimeout() throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
