@@ -908,4 +908,12 @@ public class LocalResultSet implements ResultSet {
 		throw new SQLException(METHOD_NOT_APPLICABLE);
 	}
 
+    public <T> T getObject(int columnIndex, Class<T> type) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public <T> T getObject(String columnLabel, Class<T> type) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

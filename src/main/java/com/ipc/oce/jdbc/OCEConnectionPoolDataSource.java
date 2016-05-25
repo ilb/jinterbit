@@ -5,6 +5,8 @@ package com.ipc.oce.jdbc;
 
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.sql.SQLFeatureNotSupportedException;
+import java.util.logging.Logger;
 
 import javax.sql.ConnectionPoolDataSource;
 import javax.sql.PooledConnection;
@@ -84,5 +86,9 @@ public class OCEConnectionPoolDataSource implements ConnectionPoolDataSource {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

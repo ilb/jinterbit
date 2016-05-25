@@ -19,6 +19,8 @@ import com.ipc.oce.ApplicationDriver;
 import com.ipc.oce.DefaultApplicationDriver;
 import com.ipc.oce.OCApp;
 import com.ipc.oce.PropertiesReader;
+import java.sql.SQLFeatureNotSupportedException;
+import java.util.logging.Logger;
 
 /**
  * JDBC драйвер для обращения к 1С через DCOM. Type 4.
@@ -270,5 +272,9 @@ public class OCEDriver implements Driver {
 	public boolean jdbcCompliant() {
 		return false;
 	}
+
+    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
