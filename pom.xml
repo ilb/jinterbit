@@ -9,24 +9,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.jinterop</groupId>
-			<artifactId>jinterop</artifactId>
+			<artifactId>j-interop</artifactId>
 			<version>2.0.8</version>
-			<scope>system</scope>
-			<systemPath>${project.build.directory}/../libs/j-interop.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.jinterop</groupId>
-			<artifactId>jinterop-deps</artifactId>
-			<version>2.0.8</version>
-			<scope>system</scope>
-			<systemPath>${project.build.directory}/../libs/j-interopdeps.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.jinterop</groupId>
-			<artifactId>jcifs</artifactId>
-			<version>1.2.19</version>
-			<scope>system</scope>
-			<systemPath>${project.build.directory}/../libs/jcifs-1.2.19.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
