@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://v8.1c.ru/eventLog" xmlns:v8e="http://v8.1c.ru/eventLog" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Port" type="xsd:int"/>
+  <xsd:element name="DataPresentation" type="xsd:string"/>
+  <xsd:element name="Level" type="xsd:string"/>
+  <xsd:element name="EventName" type="xsd:string"/>
+  <xsd:element name="UserID" type="xsd:string"/>
+  <xsd:element name="MetadataPresentation" type="xsd:string"/>
+  <xsd:element name="Data" type="xsd:string"/>
+  <xsd:element name="EventLog" type="v8e:EventLogType"/>
+  <xsd:element name="ApplicationPresentation" type="xsd:string"/>
+  <xsd:element name="ServerName" type="xsd:string"/>
+  <xsd:element name="Date" type="xsd:string"/>
+  <xsd:element name="TransactionStatus" type="xsd:string"/>
+  <xsd:element name="EventPresentation" type="xsd:string"/>
+  <xsd:element name="UserName" type="xsd:string"/>
+  <xsd:element name="TransactionID" type="xsd:string"/>
+  <xsd:element name="Event" type="v8e:EventType"/>
+  <xsd:element name="MetadataName" type="xsd:string"/>
+  <xsd:element name="ApplicationName" type="xsd:string"/>
+  <xsd:element name="Computer" type="xsd:string"/>
+  <xsd:element name="SyncPort" type="xsd:int"/>
+  <xsd:element name="Connection" type="xsd:string"/>
+  <xsd:element name="Comment" type="xsd:string"/>
+  <xsd:complexType name="EventLogType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" ref="v8e:Event"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EventType">
+    <xsd:sequence>
+      <xsd:element ref="v8e:Level" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Date" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:ApplicationName" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:ApplicationPresentation" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:EventName" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:EventPresentation" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:UserID" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:UserName" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Computer" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:MetadataName" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:MetadataPresentation" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Comment" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Data" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:DataPresentation" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:TransactionStatus" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:TransactionID" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Connection" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:ServerName" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:Port" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="v8e:SyncPort" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,2 @@
+OCAccountingFlagMetadataObject - признак учета плана счетов
+OCAccountingRegisterMetadataObject - регистр бухгалтерии

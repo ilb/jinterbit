@@ -1,0 +1,90 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects._OCCommonObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false">    
+    <position x="518" y="-205" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects.OCCatalogObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/objects/OCCatalogObject.java" binary="false">    
+    <position x="83" y="262" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects.OCChartOfAccountsObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/objects/OCChartOfAccountsObject.java" binary="false">    
+    <position x="253" y="261" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects.OCChartOfCharacteristicTypesObject" 
+    project="OCExport" file="/OCExport/src/com/ipc/oce/objects/OCChartOfCharacteristicTypesObject.java" binary="false">    
+    <position x="484" y="240" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects.OCDocumentObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/objects/OCDocumentObject.java" binary="false">    
+    <position x="915" y="266" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="com.ipc.oce.objects.OCExchangePlanObject" project="OCExport" 
+    file="/OCExport/src/com/ipc/oce/objects/OCExchangePlanObject.java" binary="false">    
+    <position x="711" y="157" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="false" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <generalization>    
+    <bendpoint x="667" y="-96"/>    
+    <source project="OCExport" name="com.ipc.oce.objects.OCExchangePlanObject" 
+      file="/OCExport/src/com/ipc/oce/objects/OCExchangePlanObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.objects._OCCommonObject" 
+      file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <bendpoint x="307" y="-102"/>    
+    <source project="OCExport" name="com.ipc.oce.objects.OCChartOfAccountsObject" 
+      file="/OCExport/src/com/ipc/oce/objects/OCChartOfAccountsObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.objects._OCCommonObject" 
+      file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <bendpoint x="140" y="-115"/>    
+    <source project="OCExport" name="com.ipc.oce.objects.OCCatalogObject" 
+      file="/OCExport/src/com/ipc/oce/objects/OCCatalogObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.objects._OCCommonObject" 
+      file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <bendpoint x="870" y="-78"/>    
+    <source project="OCExport" name="com.ipc.oce.objects.OCDocumentObject" 
+      file="/OCExport/src/com/ipc/oce/objects/OCDocumentObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.objects._OCCommonObject" 
+      file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false"/>  
+  </generalization>  
+  <generalization>    
+    <source project="OCExport" name="com.ipc.oce.objects.OCChartOfCharacteristicTypesObject" 
+      file="/OCExport/src/com/ipc/oce/objects/OCChartOfCharacteristicTypesObject.java" binary="false"/>    
+    <target project="OCExport" name="com.ipc.oce.objects._OCCommonObject" 
+      file="/OCExport/src/com/ipc/oce/objects/_OCCommonObject.java" binary="false"/>  
+  </generalization>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="false" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="true" package="false" protected="true" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,9 @@
+
+syntax: regexp
+^bin$
+syntax: regexp
+^build$
+syntax: regexp
+^target$
+syntax: glob
+.*
