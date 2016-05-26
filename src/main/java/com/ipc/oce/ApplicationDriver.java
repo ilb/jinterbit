@@ -10,6 +10,7 @@ import javax.xml.namespace.NamespaceContext;
 import com.ipc.oce.v80.ApplicationDriverV80;
 import com.ipc.oce.v81.ApplicationDriverV81;
 import com.ipc.oce.v82.ApplicationDriverV82;
+import com.ipc.oce.v83.ApplicationDriverV83;
 
 
 /**
@@ -26,7 +27,8 @@ public abstract class ApplicationDriver {
 		AVAILABLE_DRIVERS = new String[] {
 			"V80Driver",
 			"V81Driver",
-			"V82Driver"
+			"V82Driver",
+                        "V83Driver"
 		};
 	}
 	
@@ -168,6 +170,9 @@ public abstract class ApplicationDriver {
 		} else
 		if (driverName.equals("V82Driver")) {
 			driver = new ApplicationDriverV82();
+		} else 
+		if (driverName.equals("V83Driver")) {
+			driver = new ApplicationDriverV83();
 		} else {
 			throw new RuntimeException("Driver with name '" + driverName
 					+ "' not found. Choose: "
