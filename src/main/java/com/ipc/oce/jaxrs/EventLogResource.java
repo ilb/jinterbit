@@ -24,13 +24,11 @@ import com.ipc.oce.exceptions.ConfigurationException;
 import com.ipc.oce.metadata.objects._OCCommonMetadataObject;
 import com.ipc.oce.objects._OCAbstractManager;
 import com.ipc.oce.varset.EEventLogLevel;
-import com.sun.jersey.spi.container.servlet.PerSession;
 
 /**
  * @author Konovalov
  *
  */
-@PerSession
 @Path("/one-rs/events")
 public class EventLogResource extends ResourceSessionAccessor {
 	

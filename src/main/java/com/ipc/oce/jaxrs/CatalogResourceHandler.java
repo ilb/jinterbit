@@ -19,13 +19,11 @@ import com.ipc.oce.objects.OCCatalogManager;
 import com.ipc.oce.objects.OCCatalogObject;
 import com.ipc.oce.objects.OCCatalogSelection;
 import com.ipc.oce.xml.oc.OCXDTOSerializer;
-import com.sun.jersey.spi.container.servlet.PerSession;
 
 /**
  * @author Konovalov
  *
  */
-@PerSession
 @Path("/one-rs/catalogs")
 public class CatalogResourceHandler extends ResourceSessionAccessor {
 
