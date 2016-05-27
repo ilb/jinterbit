@@ -18,14 +18,12 @@ import com.ipc.oce.OCApp;
 import com.ipc.oce.query.OCQueryResultSelection;
 import com.ipc.oce.query.QueryTemplate;
 import com.ipc.oce.xml.oc.MarshalHelper;
-import com.sun.jersey.api.client.ClientResponse.Status;
-import com.sun.jersey.spi.container.servlet.PerSession;
+import javax.ws.rs.core.Response.Status;
 
 /**
  * @author Konovalov
  *
  */
-@PerSession
 @Path("/one-rs/query")
 public class QueryResource extends ResourceSessionAccessor {
 	

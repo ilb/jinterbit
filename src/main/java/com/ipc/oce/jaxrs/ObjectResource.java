@@ -31,7 +31,6 @@ import com.ipc.oce.objects._OCCommonObject;
 import com.ipc.oce.xml.oc.OCXDTOSerializer;
 import com.ipc.oce.xml.oc.OCXMLReader;
 import com.ipc.oce.xml.oc.OCXMLWriter;
-import com.sun.jersey.spi.container.servlet.PerSession;
 
 /**
  * @author Konovalov 
@@ -41,7 +40,6 @@ import com.sun.jersey.spi.container.servlet.PerSession;
  * Delete = DELETE
  * 
  */
-@PerSession
 @Path("/one-rsx/objects")
 public class ObjectResource extends ResourceSessionAccessor {
 
