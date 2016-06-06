@@ -35,6 +35,32 @@ public class OCXDTOFactory extends OCObject {
 	public OCXDTOFactory(OCObject object) {
 		super(object);
 	}
+	/**
+	 * Производит чтение значения в формате XML. Прочитаны могут значения тех типов, которые могут быть записаны методом ЗаписатьXML. 
+	 * @param reader Объект, через который происходит чтение XML
+	 * @param type Тип значения, которое должно быть прочитано из XML. Если тип не указан, то будет произведена попытка определения типа значения непосредственно из представления XML. Если тип не указан и установить его не представляется возможным, или считываемые данные не соответствуют значению типа, то будет вызвано исключение. 
+	 * @return Значение считанного типа
+	 * @throws JIException
+	 */
+	public OCXDTODataObject readXML(OCXMLReader reader, OCXDTOObjectType type) throws JIException{
+		return new OCXDTODataObject(callMethodA("ReadXML", new Object[] {
+				ocObject2Dispatch(reader),
+				type != null ? ocObject2Dispatch(type) : null })[0]);
+	}
+        
+	/**
+	 * Производит чтение значения в формате XML. Прочитаны могут значения тех типов, которые могут быть записаны методом ЗаписатьXML. 
+	 * @param reader Объект, через который происходит чтение XML
+	 * @param type Тип значения, которое должно быть прочитано из XML. Если тип не указан, то будет произведена попытка определения типа значения непосредственно из представления XML. Если тип не указан и установить его не представляется возможным, или считываемые данные не соответствуют значению типа, то будет вызвано исключение. 
+	 * @return Значение считанного типа
+	 * @throws JIException
+	 */
+	public OCXDTODataObject readXML(String xml, OCXDTOObjectType type) throws JIException{
+		OCApp app = OCApp.getInstance(getAssociatedSessionID());
+		OCXMLReader reader = app.newXMLReader();
+		reader.setString(xml);
+                return readXML(reader,type);
+	}
 	
 	/**
 	 * Записывает указанный элемент данных XDTO в объект записи XML
