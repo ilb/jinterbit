@@ -75,7 +75,7 @@
                 <version>${maven-release-plugin.version}</version>
                 <configuration>
                     <useReleaseProfile>false</useReleaseProfile>
-                    <releaseProfiles>release,archetype</releaseProfiles>
+                    <releaseProfiles>release</releaseProfiles>
                     <goals>deploy</goals>
                     <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
