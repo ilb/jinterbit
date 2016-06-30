@@ -1,15 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.ilb.jinterbit</groupId>
     <artifactId>jinterbit</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>jinterbit</name>
     <url>https://github.com/ilb/jinterbit</url>
     <scm>
         <connection>scm:git:https://github.com/ilb/jinterbit.git</connection>
         <url>https://github.com/ilb/jinterbit</url>
-        <tag>HEAD</tag>
+        <tag>jinterbit-1.0</tag>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
