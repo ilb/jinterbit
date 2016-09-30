@@ -79,7 +79,8 @@ public class ComApp extends ComObject {
 		
 		JISystem.setInBuiltLogHandler(false);
 		try {
-			JISystem.getLogger().setLevel(Level.OFF);
+                        //fix - creates multiple files j-Interop0.log.XXX.lck
+			//JISystem.getLogger().setLevel(Level.OFF);
 		} catch (Exception e) {}
 		
 		//System.out.println("Domain: '" + domain + "', User: '" + user + "', Password: '" + password+"'");
