@@ -76,11 +76,11 @@ public class ComApp extends ComObject {
 	public void open(String server, String domain, String user, String password,
 			String applId, boolean isClsId) throws JIException,
 			SecurityException, IOException {
-		
-		JISystem.setInBuiltLogHandler(false);
+
+                //fix - creates multiple files j-Interop0.log.XXX.lck
+		//JISystem.setInBuiltLogHandler(false);
 		try {
-                        //fix - creates multiple files j-Interop0.log.XXX.lck
-			//JISystem.getLogger().setLevel(Level.OFF);
+			JISystem.getLogger().setLevel(Level.OFF);
 		} catch (Exception e) {}
 		
 		//System.out.println("Domain: '" + domain + "', User: '" + user + "', Password: '" + password+"'");
