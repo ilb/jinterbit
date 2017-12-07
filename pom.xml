@@ -2,13 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.ilb.jinterbit</groupId>
     <artifactId>jinterbit</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
     <name>jinterbit</name>
     <url>https://github.com/ilb/jinterbit</url>
     <scm>
         <connection>scm:git:https://github.com/ilb/jinterbit.git</connection>
         <url>https://github.com/ilb/jinterbit</url>
-        <tag>HEAD</tag>
+        <tag>jinterbit-1.2</tag>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
