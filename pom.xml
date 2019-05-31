@@ -2,13 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.ilb.jinterbit</groupId>
     <artifactId>jinterbit</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <name>jinterbit</name>
     <url>https://github.com/ilb/jinterbit</url>
     <scm>
         <connection>scm:git:https://github.com/ilb/jinterbit.git</connection>
         <url>https://github.com/ilb/jinterbit</url>
-        <tag>HEAD</tag>
+        <tag>jinterbit-1.4</tag>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,7 +30,7 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
-        
+
     <dependencies>
         <dependency>
             <groupId>org.jinterop</groupId>
